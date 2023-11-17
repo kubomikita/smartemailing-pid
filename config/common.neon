@@ -1,0 +1,22 @@
+parameters:
+    pidPointEndpoint: https://data.pid.cz/pointsOfSale/json/pointsOfSale.json
+    pidListEndpoint: https://data.pid.cz/pointsOfSale/json/consts-cs.json
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+latte:
+	strictTypes: yes
+
+
+session:
+	expiration: 14 days
+
+
+di:
+	export:
+		tags: no
