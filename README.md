@@ -44,6 +44,10 @@ composer create-project --ignore-platform-reqs kubomikita/smartemailing-pid /pat
 Run app in your prefered browser.
 
 ## Usage
+First sync data with Open data PID with PHP-CLI
+```sh
+php /path-to-your-project-directory/www/index.php Cron:SyncPid
+```
 
 API endpoint for list all PID points
 
